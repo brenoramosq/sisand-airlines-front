@@ -1,0 +1,132 @@
+<div id="booking" class="section">  
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="booking-cta">
+            <h1>Sisand Airlines</h1>
+            <p>Uma maneira de voar criada pensando em você</p>
+          </div>
+        </div>
+        <div class="col-md-7 col-md-offset-1">
+          <div class="booking-form">
+            <form #f="ngForm" (ngSubmit)="book()">
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <label for="roundtrip">
+                    <input type="radio" id="roundtrip" name="flight-type" checked required />
+                    <span></span>Somente ida
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Origem</span>
+                    <input
+                      class="form-control"
+                      name="origin"
+                      [(ngModel)]="origin"
+                      type="text"
+                      [readonly]="true"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Destino</span>
+                    <input
+                      class="form-control"
+                      name="destination"
+                      [(ngModel)]="destination"
+                      type="text"
+                      [readonly]="true"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Partida</span>
+                    <input
+                      class="form-control"
+                      name="startDate"
+                      [(ngModel)]="startDate"
+                      type="date"
+                      [readonly]="true"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Retorno</span>
+                    <input
+                      class="form-control"
+                      name="endDate"
+                      [(ngModel)]="endDate"
+                      type="date"
+                      [readonly]="true"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Quantidade de passageiros</span>
+                    <select
+                      class="form-control"
+                      name="passenger"
+                      [(ngModel)]="passenger"
+                      required
+                    >
+                      <option value="0" disabled selected>Selecione a quantidade de passageiros</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Categoria</span>
+                    <select
+                      class="form-control"
+                      name="category"
+                      [(ngModel)]="category"
+                      required
+                    >
+                      <option value="0" disabled selected>Selecione o tipo da categoria</option>
+                      <option value="1">Classe econômica</option>
+                      <option value="2">Primeira classe</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-btn">
+                <button
+                  class="submit-btn"
+                  type="submit"
+                  [disabled]="!f.valid || !validateCategory() || !validatePassenger()"
+                >
+                  Encontrar voos
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-flight-list *ngIf="flights && flights.length > 0" [flights]="flights"></app-flight-list>

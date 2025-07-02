@@ -1,0 +1,35 @@
+<div id="flight-section" class="container mt-5">
+  <h2 class="mb-4 text-center">Voos disponíveis - Curitiba → São Paulo</h2>
+
+  <div class="row">
+    <div class="col-md-6 mb-4" *ngFor="let flight of flights">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Voo #{{ flight.flightCode }}</h5>
+            <span class="badge bg-primary"> Sisand Airlines</span>
+          </div>
+          <p><strong>Origem:</strong> {{ flight.origin }}</p>
+          <p><strong>Destino:</strong> {{ flight.destination }}</p>
+          <p><strong>Horário:</strong> {{ flight.startTime }}</p>
+            <div class="mb-2">
+            <strong>Assentos disponíveis: </strong>
+            <div class="form-check form-check-inline" *ngFor="let seat of flight.availableSeats">
+                <input class="form-check-input"
+                       type="checkbox"
+                       [id]="seat + '-' + flight.flightId"
+                       [value]="seat"
+                       (change)="onSeatChange(flight.flightId, seat, $event)">
+              <label class="form-check-label" [for]="seat + '-' + flight.flightId">{{ seat }}</label>
+            </div>
+          </div>
+          <p><strong>Preço:</strong> R$ {{flight.price}}</p>
+          <div class="d-flex justify-content-between align-items-center">            
+            <button class="btn btn-outline-primary btn-sm" (click)="add(flight)">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
