@@ -1,43 +1,64 @@
 # Sisand Airlines - Sistema de Compra de Passagens Aéreas
 
-## 1) Descrição
-Este projeto é o **interface web (frontend) de compra de passagens aéreas** desenvolvida para a empresa fictícia **Sisand Airlines**, que realiza **viagens diárias de Curitiba para São Paulo**.
+Interface web para a compra de passagens da empresa fictícia **Sisand Airlines**, que realiza **viagens diárias de Curitiba para São Paulo**. Esta aplicação foi desenvolvida como parte de um sistema completo de reservas e compras de passagens aéreas.
 
-A aplicação foi construída com as seguintes tecnologias:
+## Começando
 
-- **Linguagem:** Angular  
-- **Versão:** 20.0.4
+### Pré-requisitos
 
-## 2) Instruções de Instalação
+Antes de tudo, você precisará ter instalado:
 
-### 2.1. Clone ou baixe este repositório em sua máquina:
-   
+[Node.js](https://nodejs.org/) (versão compatível com Angular 20)
+[Angular CLI](https://angular.io/cli)
+[Visual Studio Code](https://code.visualstudio.com/) (opcional, mas recomendado)
+
+### Instalação
+
+1. Clone o repositório
 bash
-   git clone https://github.com/brenoramosq/sisand-airlines-front
+git clone https://github.com/brenoramosq/sisand-airlines-front
+````
 
-### 2.2. Abra o projeto no Visual Studio Code
+2. Acesse o diretório do projeto
+bash
+cd sisand-airlines-front
 
-### 2.3. Edite o arquivo environment.ts, apontando a URL correta da API do projeto(sisand-airlines-api).
 
-### 2.4. Instale as dependências
-    2.4.1. npm install
+3. Instale as dependências
+bash
+npm install
 
-### 2.5. Inicie o servidor de desenvolvimento
-    2.5.1. npm start
 
-### 2.6. Acesse a aplicação
-    2.6.1. Abra o navegador e vá para a url(padrão): http://localhost:4200
+4. Edite o arquivo `src/environments/environment.ts`, apontando para a URL correta da API (sisand-airlines-api):
+ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000' // exemplo de URL da API
+};
 
-⚠️ Atenção: Para visualizar os voos disponíveis é necessário incluir os voos diários no projeto sisand-airlines-api
 
-### 2.7. Dentro da página principal você encontrará:
+### Executando a aplicação
+bash
+# Inicie o servidor de desenvolvimento
+npm start
+
+
+Depois, acesse a aplicação no navegador:
+http://localhost:4200
+
+
+
+## Funcionalidades disponíveis
+
+Na página principal, você encontrará:
+
 - **Consulta dos voos**
-- **Visualização de assentos disponíveis**  
-- **Reservar de assentos**
+- **Visualização de assentos disponíveis**
+- **Reserva de assentos**
 - **Carrinho de compras com as reservas realizadas**
 
-⚠️ Para acessar a funcionalidade de checkout, é necessário estar logado:
+⚠️ Para acessar o checkout, é necessário estar logado. O sistema conta com:
 
 - **Cadastro de usuário**
 - **Login**
-- **Checkout das reservas**
+- **Finalização de reservas (checkout)**
