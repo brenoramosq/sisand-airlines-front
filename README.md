@@ -14,28 +14,27 @@ Antes de tudo, você precisará ter instalado:
 
 ### Instalação
 
-1. Clone o repositório
+## 1. Clone o repositório
 bash
    git clone https://github.com/brenoramosq/sisand-airlines-front
 
-2. Acesse o diretório do projeto
+## 2. Acesse o diretório do projeto
 bash
    cd sisand-airlines-front
 
 
-3. Instale as dependências
+## 3. Instale as dependências
 bash
    npm install
 
 
-4. Edite o arquivo `src/environments/environment.ts`, apontando para a URL correta da API (sisand-airlines-api):
-   export const environment = {
-      production: false,
-      apiUrl: 'http://localhost:3000' // exemplo de URL da API
-   };
+## 4. Edite o arquivo `src/environments/environment.ts`, apontando para a URL correta da API (sisand-airlines-api):
+         export const environment = {
+           production: false,
+           apiUrl: 'http://localhost:3000' // exemplo de URL da API
+         };
 
-
-### Executando a aplicação
+## 5. Executando a aplicação
 bash
    # Inicie o servidor de desenvolvimento
       npm start
@@ -44,7 +43,7 @@ bash
       http://localhost:4200
 
 
-## Funcionalidades disponíveis
+## 6. Funcionalidades disponíveis
 
 Na página principal, você encontrará:
 
