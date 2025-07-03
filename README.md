@@ -1,63 +1,43 @@
-<<<<<<< HEAD
-# SisandAirlines
+# Sisand Airlines - Sistema de Compra de Passagens Aéreas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+## 1) Descrição
+Este projeto é o **interface web (frontend) de compra de passagens aéreas** desenvolvida para a empresa fictícia **Sisand Airlines**, que realiza **viagens diárias de Curitiba para São Paulo**.
 
-## Development server
+A aplicação foi construída com as seguintes tecnologias:
 
-To start a local development server, run:
+- **Linguagem:** Angular  
+- **Versão:** 20.0.4
 
-```bash
-ng serve
-```
+## 2) Instruções de Instalação
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2.1. Clone ou baixe este repositório em sua máquina:
+   
+bash
+   git clone https://github.com/brenoramosq/sisand-airlines-front
 
-## Code scaffolding
+### 2.2. Abra o projeto no Visual Studio Code
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 2.3. Edite o arquivo environment.ts, apontando a URL correta da API do projeto(sisand-airlines-api).
 
-```bash
-ng generate component component-name
-```
+### 2.4. Instale as dependências
+    2.4.1. npm install
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 2.5. Inicie o servidor de desenvolvimento
+    2.5.1. npm start
 
-```bash
-ng generate --help
-```
+### 2.6. Acesse a aplicação
+    2.6.1. Abra o navegador e vá para a url(padrão): http://localhost:4200
 
-## Building
+⚠️ Atenção: Para visualizar os voos disponíveis é necessário incluir os voos diários no projeto sisand-airlines-api
 
-To build the project run:
+### 2.7. Dentro da página principal você encontrará:
+**Consulta dos voos**
+**Visualização de assentos disponíveis**  
+**Reservar de assentos**
+**Carrinho de compras com as reservas realizadas**
 
-```bash
-ng build
-```
+⚠️ Para acessar a funcionalidade de checkout, é necessário estar logado:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# sisand-airlines-front
->>>>>>> d317769a9577def57a0393164fee8ac230f78b4d
+**Cadastro de usuário**
+**Login**
+**Checkout das reservas**
