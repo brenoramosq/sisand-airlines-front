@@ -15,7 +15,6 @@ Antes de tudo, você precisará ter instalado:
 ### Instalação
 
 ## 1. Clone o repositório
-bash
    git clone https://github.com/brenoramosq/sisand-airlines-front
 
 ## 2. Acesse o diretório do projeto
