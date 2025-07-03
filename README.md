@@ -30,10 +30,10 @@ bash
 
 4. Edite o arquivo `src/environments/environment.ts`, apontando para a URL correta da API (sisand-airlines-api):
 ts
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:3000' // exemplo de URL da API
-};
+   export const environment = {
+      production: false,
+      apiUrl: 'http://localhost:3000' // exemplo de URL da API
+   };
 
 
 ### Executando a aplicação
