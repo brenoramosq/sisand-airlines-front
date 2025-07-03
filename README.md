@@ -31,13 +31,13 @@ bash
 ⚠️ Atenção: Para visualizar os voos disponíveis é necessário incluir os voos diários no projeto sisand-airlines-api
 
 ### 2.7. Dentro da página principal você encontrará:
-**Consulta dos voos**
-**Visualização de assentos disponíveis**  
-**Reservar de assentos**
-**Carrinho de compras com as reservas realizadas**
+- **Consulta dos voos**
+- **Visualização de assentos disponíveis**  
+- **Reservar de assentos**
+- **Carrinho de compras com as reservas realizadas**
 
 ⚠️ Para acessar a funcionalidade de checkout, é necessário estar logado:
 
-**Cadastro de usuário**
-**Login**
-**Checkout das reservas**
+- **Cadastro de usuário**
+- **Login**
+- **Checkout das reservas**
