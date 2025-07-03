@@ -8,9 +8,9 @@ Interface web para a compra de passagens da empresa fictícia **Sisand Airlines*
 
 Antes de tudo, você precisará ter instalado:
 
-[Node.js](https://nodejs.org/) (versão compatível com Angular 20)
-[Angular CLI](https://angular.io/cli)
-[Visual Studio Code](https://code.visualstudio.com/) (opcional, mas recomendado)
+- [Node.js](https://nodejs.org/) (versão compatível com Angular 20)
+- [Angular CLI](https://angular.io/cli)
+- [Visual Studio Code](https://code.visualstudio.com/) (opcional, mas recomendado)
 
 ### Instalação
 
